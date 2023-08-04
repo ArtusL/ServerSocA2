@@ -53,6 +53,7 @@ public class Player : MonoBehaviourPunCallbacks
         eButton = GameObject.Find("EButton");
 
         canMove = true;
+        if (photonView.IsMine)
         eButton.SetActive(false);
     }
 
